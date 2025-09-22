@@ -1,0 +1,9 @@
+ m     fill width with a comma separated list of entries
+ 
+ p : / after diroctory 
+  u : dp on a edit last edit first list 
+  t : sort by time, newest first
+  
+  ls -umtp 
+ 
+

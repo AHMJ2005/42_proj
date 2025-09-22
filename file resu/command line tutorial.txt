@@ -1,0 +1,85 @@
+command line tutorial :
+
+the pwd is : give me current
+working directory. 
+
+"ls" : list the content of the current working directory.
+
+"ls -a" : To display hidden files and folders within your current working directory in Unix-like systems .
+
+"ls -l" : to format the output as a long listing .
+
+change directory :
+"cd" : ncluding Linux, stands for "change directory." It is a fundamental shell built-in command used to navigate the file system hierarchy by changing the current working directory of the shell.
+
+"cd -" : To return to the previous working directory after using the cd command in Unix .
+ make file using terminal : 
+ we use the command "touch file.txt ".
+ 
+ if we make and edit in the same time we use " echo "This is the content of the file." > filename.txt" . 
+ 
+ It is not possible to change directory to a file, such as file.txt, because files and directories serve different functions in a file system . 
+ 
+"nano filename.txt ":
+After executing this command, the terminal will wait for you to type content. Type your desired text, pressing Enter for new lines. Once finished, press Ctrl + D (on a new line) to save the content and exit.
+
+    Creating and editing a file with a text editor (e.g., vi or nano). { To save and exit in vi, press Esc, then type :wq! and press Enter. In nano, press Ctrl + O to save and Ctrl + X to exit.}
+
+
+"cat filename.txt " :Displaying File Contents: The most common use of cat is to display the entire content of one or more files directly to the standard output (usually the terminal). 
+
+
+"cat file1.txt file2.txt > combined_file.txt" : Concatenating Files: cat can combine the contents of multiple files into a single output stream. This output can then be redirected to a new file, effectively merging the files. 
+
+"cat > newfile.txt
+ # Type your content here, then press Ctrl+D" :Creating New Files .
+
+
+{In Unix-like operating systems, rw-r--r-- represents a specific set of file permissions. This string is part of the output of the ls -l command and indicates how different users can interact with a file or directory.
+Here's a breakdown of its meaning:
+
+    First character (-):
+    This indicates the file type. A hyphen (-) signifies a regular file, while d would indicate a directory.
+
+Next three characters (rw-):
+These represent the permissions for the owner of the file.
+
+    r means read permission.
+
+w means write permission.
+- means no execute permission.
+Therefore, the owner has read and write access to the file. 
+
+Next three characters (r--):
+These represent the permissions for the group that the file belongs to.
+
+    r means read permission.
+
+-- means no write or execute permission.
+Therefore, members of the file's group can only read the file.
+
+Last three characters (r--):
+These represent the permissions for others (users who are neither the owner nor part of the file's group).
+
+    r means read permission.
+
+-- means no write or execute permission.
+Therefore, all other users can only read the file.
+
+In summary, -rw-r--r-- means:
+
+    It's a regular file.
+    The owner can read and write to the file.
+    The group members can only read the file.
+    Other users: can only read the file. 
+
+This permission set is often represented numerically as 644, where 6 corresponds to read and write (4+2) for the owner, and 4 corresponds to read (4) for both the group and others.}
+
+remove a files : "rmdir my_new_directory".
+
+"rm -r my_new_directory " : Removing a directory and its contents (if it's not empty):
+To remove a directory and all its contents (files and subdirectories), use the rm command with the -r (recursive) option. The -f (force) option can be added to suppress prompts, but use it with caution as it will delete without confirmation. 
+
+ [The man command in Unix and Unix-like operating systems (such as Linux) is used to display the manual pages for commands, utilities, system calls, library functions, and other topics. "Man" is short for "manual."]
+
+

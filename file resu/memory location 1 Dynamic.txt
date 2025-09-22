@@ -1,0 +1,14 @@
+memory location :
+1_Dynamic memory allocation techniques give programmer control of memory when to allocate, how much to allocate and when to de-allocate.
+
+Normal local variable defined in a function is stored in the stack memory. 
+
+2_The limitations of such allocations are, "size needs to known at compile time", we cannot change the size or delete the memory.
+
+3_You allocate memory at runtime, giving you the ability to handle data of varying sizes. Dynamic resources are stored in the heap memory instead of the stack.
+
+4_The size of the array can be increased if more elements are to be inserted and decreased of less elements are inserted.
+
+5_The dynamically allocated memory stays there (if the programmer has not de-allocated it) even after the function call is over, so a function can return pointer to the allocated memory. In case of normal local variables/arrays, the memory/variables become invalid once the function call is over.
+
+6_The memory allocated by malloc() is uninitialized, meaning it contains garbage values.
